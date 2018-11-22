@@ -3,7 +3,7 @@
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
 <head>
-    <title>Ninjarails | Full-stack Web Developer</title>
+    <title>Ninjarails | Full-stack Ruby on Rails Developer</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,11 +23,14 @@
 
     <!-- for parcle -->
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    
+    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css" />
 </head> 
 
 <body>
+    <audio autoplay loop>
+      <source src="img/background.mp3">
+    </audio>
     
     <div id="preloader">
         <div id="status">&nbsp;</div>
@@ -40,7 +43,7 @@
             <img class="profile-image img-responsive pull-left wow fadeInLeft" src="assets/images/profile.png" alt="Ming Jin" />
             <div class="profile-content pull-left">
                 <h1 class="name  wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0s">Ming Jin</h1>
-                <h2 class="desc  wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.2s">Full-stack Web Developer</h2>   
+                <h2 class="desc  wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.2s">Full-stack Ruby on Rails Developer</h2>   
                 <ul class="social list-inline">
                     <li class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.4s"><a href="https://angel.co/ming_jin" target="_blank"><i class="fa fa-angellist"></i></a></li>
                     <li class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s"><a href="https://www.linkedin.com/in/ming-jin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
@@ -79,10 +82,15 @@ My experience is also augmented with knowledge in 3NF database normalization, us
 
                          
                         </div><!--//content-->
-                    </div><!--//section-inner-->                 
+                                            <!-- Prepare a container for your calendar. -->
+                    <div class="calendar">
+                        <!-- Loading stuff -->
+                        Loading the data just for you.
+                    </div>            
+                    </div><!--//section-inner-->     
                 </section><!--//section-->
     
-               <section class="latest section wow zoomIn" data-wow-delay="1.2s" data-wow-offset="200">
+               <section class="latest section wow zoomIn" data-wow-delay="0.2s" data-wow-offset="100">
                     <div class="section-inner">
                         <h2 class="heading">Latest Projects</h2>
                         <div class="content">    
@@ -192,7 +200,7 @@ My experience is also augmented with knowledge in 3NF database normalization, us
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
                 
-                <section class="experience section wow zoomIn"  data-wow-offset="200">
+                <section class="experience section wow zoomIn"  data-wow-offset="100">
                     <div class="section-inner">
                         <h2 class="heading">Work Experience</h2>
 
@@ -234,8 +242,29 @@ My experience is also augmented with knowledge in 3NF database normalization, us
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
                 </aside><!--//aside-->
+
+                <aside class="info aside section wow zoomIn">
+                    <div class="section-inner">
+                        <h5 class="level-title">Remote work on</h5>
+                        <div class="content item row">
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <img class="img-responsive project-image" src="assets/images/tools/github.jpg" />
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <img class="img-responsive project-image" src="assets/images/tools/trello.jpg" />
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <img class="img-responsive project-image" src="assets/images/tools/slack.jpg" />
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <img class="img-responsive project-image" src="assets/images/tools/hangout.jpg" />
+                            </div>
+                            </ul>
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//aside-->
                 
-                <aside class="skills aside section wow zoomIn"  data-wow-offset="100" data-wow-delay="1.4s">
+                <aside class="skills aside section wow zoomIn"  data-wow-offset="100" data-wow-delay="0.4s">
                     <div class="section-inner">
                         <h2 class="heading">Skills</h2>
                         <div class="content">
@@ -245,21 +274,21 @@ My experience is also augmented with knowledge in 3NF database normalization, us
                             
                             <div class="skillset">
                                 <div class="item">
-                                    <h3 class="level-title wow flash">Ruby on Rails<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to add more info...">Great</span></h3>
+                                    <h3 class="level-title wow flash">Ruby on Rails<span class="level-label" data-placement="left" data-animation="true">Great</span></h3>
                                     <div class="level-bar">
                                         <div class="level-bar-inner" data-level="100%">
                                         </div>                                      
                                     </div><!--//level-bar-->                                 
                                 </div><!--//item-->
                                 <div class="item">
-                                    <h3 class="level-title wow flash">React / Angular / Vue.js<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to add more info...">Good</span></h3>
+                                    <h3 class="level-title wow flash">React / Angular / Vue.js<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true">Good</span></h3>
                                     <div class="level-bar">
                                         <div class="level-bar-inner" data-level="70%">
                                         </div>                                      
                                     </div><!--//level-bar-->                                 
                                 </div><!--//item-->
                                 <div class="item">
-                                    <h3 class="level-title wow flash">HTML / CSS<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to add more info...">Great</span></h3>
+                                    <h3 class="level-title wow flash">HTML / CSS<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true">Great</span></h3>
                                     <div class="level-bar">
                                         <div class="level-bar-inner" data-level="96%">
                                         </div>                                      
@@ -267,7 +296,7 @@ My experience is also augmented with knowledge in 3NF database normalization, us
                                 </div><!--//item-->
 
                                 <div class="item">
-                                    <h3 class="level-title wow flash">JavaScript / jQuery<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to add more info...">Great</span></h3>
+                                    <h3 class="level-title wow flash">JavaScript / jQuery<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true">Great</span></h3>
                                     <div class="level-bar">
                                         <div class="level-bar-inner" data-level="91%">
                                         </div>                                      
@@ -275,7 +304,7 @@ My experience is also augmented with knowledge in 3NF database normalization, us
                                 </div><!--//item-->
 
                                 <div class="item">
-                                    <h3 class="level-title wow flash">PHP / MySQL<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to add more info...">Good</span></h3>
+                                    <h3 class="level-title wow flash">PHP / MySQL<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true">Good</span></h3>
                                     <div class="level-bar">
                                         <div class="level-bar-inner" data-level="75%">
                                         </div>                                      
@@ -283,7 +312,7 @@ My experience is also augmented with knowledge in 3NF database normalization, us
                                 </div><!--//item-->
                                 <div class="item">
 
-                                    <h3 class="level-title wow flash">Machine learning<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to add more info...">Good</span></h3>
+                                    <h3 class="level-title wow flash">Machine learning<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true">Good</span></h3>
                                     <div class="level-bar">
                                         <div class="level-bar-inner" data-level="60%">
                                         </div>                                      
@@ -437,18 +466,20 @@ My experience is also augmented with knowledge in 3NF database normalization, us
         
     </script>
 
-    <script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
-    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
-    <!-- github activity plugin -->
-    <script type="text/javascript" src="assets/plugins/github-activity/dist/mustache/mustache.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/github-activity/dist/github-activity-0.1.1.min.js"></script>
     <!-- custom js -->
     <script type="text/javascript" src="assets/js/main.js"></script>  
     
     <script src="js/particles.js"></script>
     <script src="js/app.js"></script>
-     
-</body>
+
+    <!-- Prepare a container for your calendar. -->
+    <script
+      src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"
+    >
+    </script>
+    <script>
+        new GitHubCalendar(".calendar", "ninjarails");
+    </script>
+    </body>
 </html> 
 
